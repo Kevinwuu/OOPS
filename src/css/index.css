@@ -2,10 +2,15 @@
 
 html {
     font-size: 12px;
+    overflow: -moz-hidden-unscrollable;
 }
 
 li {
     list-style: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 body {
@@ -72,6 +77,9 @@ body {
     .content {
         margin-top: 800px;
         margin-bottom: 600px;
+    }
+    footer {
+        height: 450px;
     }
     footer img {
         height: 450px;
