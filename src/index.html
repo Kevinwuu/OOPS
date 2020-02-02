@@ -8,6 +8,7 @@
     <title>OOPS2019</title>
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css' />
 </head>
 
 <body>
@@ -42,10 +43,10 @@
             <!-- <img id="oops" src="img/oops.png" alt=""> -->
         </nav>
         <div class="content">
-            <div class="aboutus">
+            <div class="aboutus wow animated slideInLeft">
                 <img src="img/text_aboutus.png" alt="" />
             </div>
-            <div class="product">
+            <div class="product wow animated fadeIn">
                 <img src="img/text_product.png" alt="" />
             </div>
             <div class="guideline">
@@ -57,6 +58,16 @@
             <img src="img/bg_down.png" alt="" />
         </footer>
     </div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
 </body>
+<script>
+    var wow = new WOW({
+        boxClass: 'wow', // 要套用WOW.js縮需要的動畫class(預設是wow)
+        offset: 0, // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+        mobile: true, // 手機上是否要套用動畫 (預設是true)
+        live: true, // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
+    });
+    wow.init();
+</script>
 
 </html>
