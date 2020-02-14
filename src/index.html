@@ -5,69 +5,112 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>OOPS2019</title>
-    <link rel="stylesheet" href="./css/index.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css' />
+    <title>OOPS</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
 </head>
 
 <body>
-    <div class="container">
-        <nav>
-            <div class="bg_filter_up">
-                <img src="img/bg_up.png" alt="" />
-            </div>
-            <div id="logo">
-                <img src="./img/logo.png" alt="" />
-            </div>
-            <div class="menu">
-                <li>
-                    <img src="img/menu_aboutus.png" alt="" />
-                </li>
-                <li>
-                    <img src="img/menu_guideline.png" alt="" />
-                </li>
-                <li>
-                    <img src="img/menu_product.png" alt="" />
-                </li>
-                <li>
-                    <img src="img/menu_member.png" alt="" />
-                </li>
-                <li>
-                    <i class="mdi mdi-account"></i>
-                    <i class="mdi-account"></i>
-
-                </li>
-            </div>
-            <img id="bubble" src="img/bubble.png" alt="" />
-            <!-- <img id="oops" src="img/oops.png" alt=""> -->
-        </nav>
-        <div class="content">
-            <div class="aboutus wow animated slideInLeft">
-                <img src="img/text_aboutus.png" alt="" />
-            </div>
-            <div class="product wow animated fadeIn">
-                <img src="img/text_product.png" alt="" />
-            </div>
-            <div class="guideline">
-                <img src="img/text_guideline.png" alt="" />
-            </div>
-            <div class="followus"></div>
+    <header>
+        <div id="logo">
+            <img src="img/logo.png" alt="" />
         </div>
-        <footer>
-            <img src="img/bg_down.png" alt="" />
-        </footer>
+        <div class="nav">
+            <ul>
+                <li>
+                    <img src="img/nav/menu_aboutus.png" alt="" />
+                </li>
+                <li>
+                    <img src="img/nav/menu_guideline.png" alt="" />
+                </li>
+                <li>
+                    <img src="img/nav/menu_product.png" alt="" />
+                </li>
+                <li>
+                    <img src="img/nav/menu_member.png" alt="" />
+                </li>
+            </ul>
+            <div class="account">
+                <li>
+                    <img src="img/nav/account.png" alt="" />
+                </li>
+                <li>
+                    <img src="img/nav/logout.png" alt="" />
+                </li>
+                <li>
+                    <img src="img/nav/cart.png" alt="" />
+                </li>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <!-- <img id="bubble" src="img/bubble.png" alt="" /> -->
+        <!-- <img id="oops" src="img/oops.png" alt=""> -->
+        <div class="aboutus wow animated slideInLeft">
+            <img src="img/text_aboutus.png" alt="" />
+        </div>
+        <div class="product wow animated fadeIn">
+            <img src="img/text_product.png" alt="" />
+        </div>
+        <div class="guideline">
+            <img src="img/text_guideline.png" alt="" />
+        </div>
+        <div class="followus"></div>
     </div>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+    <footer>
+        <div class="social_media">
+            <img src="img/footer/text_social_websites.png" alt="" />
+        </div>
+        <div class="nav_link">
+            <ul>
+                <li>
+                    <img src="img/footer/text_index.png" alt="" />
+                </li>
+                <li>
+                    <img src="img/footer/text_aboutus.png" alt="" />
+                </li>
+                <li>
+                    <img src="img/footer/text_guideline.png" alt="" />
+                </li>
+                <li>
+                    <img src="img/footer/text_guideline.png" alt="" />
+                </li>
+                <li>
+                    <img src="img/footer/text_guideline.png" alt="" />
+                </li>
+            </ul>
+        </div>
+        <div class="contact">
+            <ul>
+                <li>
+                    <img src="img/footer/text_address.png" alt="" />
+                    <p>
+                        <img src="img/footer/text_address_info.png" alt="" />
+                    </p>
+                </li>
+                <li>
+                    <img src="img/footer/text_phone.png" alt="" />
+                    <p>
+                        <img src="img/footer/text_phone_number.png" alt="" />
+                    </p>
+                </li>
+                <li>
+                    <img src="img/footer/text_phone.png" alt="" />
+                    <p>
+                        <img src="img/footer/text_phone_number.png" alt="" />
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <img src="img/logo.png" alt="" />
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </body>
 <script>
-    var wow = new WOW({
-        boxClass: 'wow', // 要套用WOW.js縮需要的動畫class(預設是wow)
-        offset: 0, // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
-        mobile: true, // 手機上是否要套用動畫 (預設是true)
-        live: true, // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
-    });
-    wow.init();
+    var wow = new WOW()
+    wow.init()
 </script>
 
 </html>

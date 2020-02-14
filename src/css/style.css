@@ -1,0 +1,179 @@
+/* Base*/
+
+html {
+    font-size: 12px;
+}
+
+body {
+    background-image: url("../img/bk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+}
+
+ul,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 2200px) {
+    /* Header*/
+    header {
+        height: 450px;
+        background-image: url("../img/bg_up.png");
+        background-repeat: no-repeat;
+        background-size: 100% 450px;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    #logo {
+        margin: 2.6rem auto;
+        z-index: 2;
+    }
+    #logo img {
+        height: 180px;
+        width: 250px;
+        min-width: 100px;
+    }
+    .nav {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+    .nav ul {
+        display: flex;
+        flex-flow: row nowrap;
+        z-index: 1;
+    }
+    .nav li {
+        margin: 10px 25px;
+    }
+    .nav li:hover {
+        cursor: pointer;
+    }
+    .nav ul li img {
+        height: 60px;
+        width: 100px;
+    }
+    .account {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin: 0 20px;
+    }
+    .account li img {
+        height: 30px;
+        width: 30px;
+    }
+    /* Main*/
+    #bubble {
+        /* width: 100vw; */
+        height: 1080px;
+        position: absolute;
+        top: 45px;
+        z-index: -999;
+    }
+    #oops {
+        /* width: 100vw; */
+        position: absolute;
+        top: 620px;
+        z-index: 1;
+    }
+    .main {
+        margin-top: 800px;
+        margin-bottom: 600px;
+    }
+    .aboutus {
+        margin: 0 200px;
+        text-align: center;
+    }
+    .aboutus img {
+        height: 400px;
+    }
+    .product {
+        margin: 150px auto;
+    }
+    .product img {
+        width: 100vw;
+        height: 950px;
+    }
+    .guideline {
+        margin: 100px 200px;
+        text-align: center;
+    }
+    .guideline img {
+        height: 800px;
+    }
+    /* Footer*/
+    footer {
+        height: 450px;
+        background-image: url("../img/bg_down.png");
+        background-repeat: no-repeat;
+        background-size: 100% 450px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    footer div {
+        margin: 0 50px;
+    }
+    .nav_link {
+        border-left: 2px solid #ffd500;
+    }
+    .nav_link ul {
+        padding-left: 10px;
+    }
+    .nav_link ul li {
+        margin-bottom: 10px;
+    }
+    .contact {
+        border-left: 2px solid #ffd500;
+    }
+    .contact ul {
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: space-between;
+    }
+    .contact ul>li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 1070px) {
+    #logo {
+        margin: 1.5rem auto;
+        z-index: 2;
+    }
+    #logo img {
+        height: 140px;
+        width: 200px;
+    }
+    .nav ul li img {
+        height: 55px;
+        width: 60px;
+    }
+    .account {
+        margin: 0 20px;
+    }
+    .account li img {
+        height: 30px;
+        width: 30px;
+    }
+    #bubble {
+        top: 200px;
+        height: 450px;
+    }
+}
