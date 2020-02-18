@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>OOPS</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -45,11 +46,11 @@
     <div class="main">
         <!-- <img id="bubble" src="img/bubble.png" alt="" /> -->
         <!-- <img id="oops" src="img/oops.png" alt=""> -->
-        <div class="aboutus">
+        <div class="aboutus" data-aos="fade-left">
             <img src="img/text_aboutus.png" alt="" />
         </div>
-        <div class="product">
-            <img src="img/text_product.png" alt="" />
+        <div class="product" data-aos="fade-up">
+            <img data-aos="fade-up" src="img/text_product.png" alt="" />
         </div>
         <div class="guideline">
             <img src="img/text_guideline.png" alt="" />
@@ -105,7 +106,10 @@
             <img src="img/logo.png" alt="" />
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
-<script></script>
+<script>
+    AOS.init()
+</script>
 
 </html>
