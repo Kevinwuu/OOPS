@@ -1,0 +1,48 @@
+/* Main*/
+
+#bubble {
+    /* width: 100vw; */
+    height: 1080px;
+    position: absolute;
+    top: 45px;
+    z-index: -999;
+}
+
+#oops {
+    /* width: 100vw; */
+    position: absolute;
+    top: 620px;
+    z-index: 1;
+}
+
+.main {
+    margin-top: 800px;
+    margin-bottom: 600px;
+}
+
+.aboutus {
+    margin: 0 200px;
+    text-align: center;
+}
+
+.aboutus img {
+    height: 400px;
+}
+
+.product {
+    margin: 150px auto;
+}
+
+.product img {
+    width: 100vw;
+    height: 950px;
+}
+
+.guideline {
+    margin: 100px 200px;
+    text-align: center;
+}
+
+.guideline img {
+    height: 800px;
+}

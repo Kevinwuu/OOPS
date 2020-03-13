@@ -1,0 +1,48 @@
+/* Footer*/
+
+footer {
+    height: 450px;
+    background-image: url("../img/bg_down.png");
+    background-repeat: no-repeat;
+    background-size: 100% 450px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer div {
+    margin: 0 50px;
+}
+
+.nav_link {
+    border-left: 2px solid #ffd500;
+}
+
+.nav_link ul {
+    padding-left: 10px;
+}
+
+.nav_link ul li {
+    margin-bottom: 10px;
+}
+
+.contact {
+    border-left: 2px solid #ffd500;
+}
+
+.contact ul {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: space-between;
+}
+
+.contact ul>li {
+    margin-bottom: 10px;
+}
+
+#logo img:hover {
+    cursor: pointer;
+}

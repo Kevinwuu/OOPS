@@ -1,0 +1,25 @@
+html {
+    font-size: 12px;
+}
+
+body {
+    background-image: url("@/../img/bk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin: 0;
+}
+
+ul,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
