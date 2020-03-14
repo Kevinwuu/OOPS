@@ -54,7 +54,7 @@
 </template>
 
 <script>
-import '@/assets/css/footer.css'
+// import '@/assets/css/footer.css'
 export default {
   name: 'Footer',
   props: {
@@ -64,6 +64,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped lang="scss">
+<style scoped src="@/assets/css/footer.scss" lang="scss">
 
 </style>

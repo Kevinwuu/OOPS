@@ -8,18 +8,17 @@ header {
     align-items: center;
 }
 
-#logo {
+.logo {
     margin: 2.6rem auto;
     z-index: 2;
 }
 
-#logo img {
+.logo img {
     height: 180px;
     width: 250px;
-    min-width: 100px;
 }
 
-#logo img:hover {
+.logo img:hover {
     cursor: pointer;
 }
 

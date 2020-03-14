@@ -15,7 +15,7 @@
     z-index: 1;
 }
 
-.main {
+.home {
     margin-top: 800px;
     margin-bottom: 600px;
 }
@@ -23,26 +23,34 @@
 .aboutus {
     margin: 0 200px;
     text-align: center;
+    img {
+        height: 400px;
+    }
 }
 
-.aboutus img {
-    height: 400px;
-}
-
+// .aboutus img {
+//     height: 400px;
+// }
 .product {
     margin: 150px auto;
+    img {
+        width: 100vw;
+        height: 950px;
+    }
 }
 
-.product img {
-    width: 100vw;
-    height: 950px;
-}
-
+// .product img {
+//     width: 100vw;
+//     height: 950px;
+// }
 .guideline {
     margin: 100px 200px;
     text-align: center;
+    img {
+        height: 800px;
+    }
 }
 
-.guideline img {
-    height: 800px;
-}
+// .guideline img {
+//     height: 800px;
+// }

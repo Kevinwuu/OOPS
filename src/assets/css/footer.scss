@@ -43,6 +43,11 @@ footer div {
     margin-bottom: 10px;
 }
 
-#logo img:hover {
+.logo img {
+    height: 180px;
+    width: 250px;
+}
+
+.logo img:hover {
     cursor: pointer;
 }

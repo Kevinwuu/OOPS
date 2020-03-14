@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="home">
           <!-- <img id="bubble" src="img/bubble.png" alt="" /> -->
       <!-- <img id="oops" src="img/oops.png" alt=""> -->
       <div class="aboutus" data-aos="fade-left">
@@ -17,7 +17,7 @@
 
 <script>
 // @ is an alias to /src
-import '@/assets/css/main.css'
+// import '@/assets/css/home.css'
 export default {
   name: 'Home',
   components: {
@@ -26,6 +26,6 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
+<style lang="scss" src="@/assets/css/home.scss" scoped>
 
 </style>
