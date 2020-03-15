@@ -1,53 +1,58 @@
-/* Footer*/
-
 footer {
-    height: 450px;
-    background-image: url("../img/bg_down.png");
+    height: 370px;
+    background-image: url("../img/footer/bg_down.png");
     background-repeat: no-repeat;
-    background-size: 100% 450px;
+    background-size: 100% 372px;
+    // padding-top: 60px;
+    padding-right: 20px;
+    padding-left: 20px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-}
-
-footer div {
-    margin: 0 50px;
+    div {
+        margin: 0 50px;
+    }
 }
 
 .nav_link {
     border-left: 2px solid #ffd500;
-}
-
-.nav_link ul {
-    padding-left: 10px;
-}
-
-.nav_link ul li {
-    margin-bottom: 10px;
+    ul {
+        padding-left: 10px;
+        li {
+            margin-bottom: 10px;
+        }
+    }
 }
 
 .contact {
     border-left: 2px solid #ffd500;
+    ul {
+        padding-left: 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: space-between;
+        justify-content: space-between;
+        li {
+            margin-bottom: 10px;
+        }
+    }
 }
 
-.contact ul {
-    padding-left: 10px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    justify-content: space-between;
+.logo {
+    img {
+        height: 180px;
+        width: 250px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
-.contact ul>li {
-    margin-bottom: 10px;
-}
-
-.logo img {
-    height: 180px;
-    width: 250px;
-}
-
-.logo img:hover {
-    cursor: pointer;
+.social_icon {
+    img {
+        height: 50px;
+        width: 50px;
+        margin: 0 5px;
+    }
 }

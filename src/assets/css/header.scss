@@ -1,59 +1,41 @@
 header {
-    height: 450px;
-    background-image: url("../img/bg_up.png");
+    height: 370px;
+    background-image: url("../img/header/bg_up.png");
     background-repeat: no-repeat;
-    background-size: 100% 450px;
+    background-size: 100% 370px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
 }
 
 .logo {
-    margin: 2.6rem auto;
+    margin: 25px auto 20px auto;
     z-index: 2;
-}
-
-.logo img {
-    height: 180px;
-    width: 250px;
-}
-
-.logo img:hover {
-    cursor: pointer;
+    img {
+        height: 150px;
+        width: 200px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }
 
 .nav {
     display: flex;
     flex-flow: row nowrap;
-}
-
-.nav ul {
-    display: flex;
-    flex-flow: row nowrap;
-    z-index: 1;
-}
-
-.nav li {
-    margin: 10px 25px;
-}
-
-.nav li:hover {
-    cursor: pointer;
-}
-
-.nav ul li img {
-    height: 60px;
-    width: 100px;
-}
-
-.account {
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-    margin: 0 20px;
-}
-
-.account li img {
-    height: 30px;
-    width: 30px;
+    ul {
+        display: flex;
+        flex-flow: row nowrap;
+        z-index: 1;
+    }
+    li {
+        margin: 10px 25px;
+        img {
+            height: 60px;
+            width: 100px;
+        }
+        &:hover {
+            cursor: pointer;
+        }
+    }
 }

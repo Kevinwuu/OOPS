@@ -1,0 +1,25 @@
+.product {
+    padding: 50px;
+}
+
+.tissue {
+    background-image: url("../img/product/t.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 2000px;
+    width: 1000px;
+    margin: 0 auto;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    padding-top: 300px;
+    div {
+        margin: 50px;
+        text-align: center;
+        img {
+            height: 200px;
+            width: 200px;
+            margin: 0 10px;
+        }
+    }
+}

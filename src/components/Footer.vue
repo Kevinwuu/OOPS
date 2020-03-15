@@ -1,8 +1,15 @@
 <template>
     <footer>
         <div class="social_media">
-            <!-- <img src="img/footer/text_social_websites.png" alt="" /> -->
-            <img src="../assets/img/footer/text_social_websites.png" alt="" />
+            <div>
+                <img src="../assets/img/footer/text_social_websites.png" alt="" />
+            </div>
+            <div class="social_icon">
+                <img src="../assets/img/footer/LINE.png" alt="">
+                <img src="../assets/img/footer/YT.png" alt="">
+                <img src="../assets/img/footer/FB.png" alt="">
+                <img src="../assets/img/footer/IG.png" alt="">
+            </div>
         </div>
         <div class="nav_link">
             <ul>
@@ -16,10 +23,7 @@
                     <img src="../assets/img/footer/text_guideline.png" alt="" />
                 </li>
                 <li>
-                    <img src="../assets/img/footer/text_guideline.png" alt="" />
-                </li>
-                <li>
-                    <img src="../assets/img/footer/text_guideline.png" alt="" />
+                    <img src="../assets/img/footer/text_product.png" alt="" />
                 </li>
             </ul>
         </div>
@@ -38,9 +42,9 @@
                     </p>
                 </li>
                 <li>
-                    <img src="../assets/img/footer/text_phone.png" alt="" />
+                    <img src="../assets/img/footer/text_email.png" alt="" />
                     <p>
-                        <img src="../assets/img/footer/text_phone_number.png" alt="" />
+                        <img src="../assets/img/footer/text_email_info.png" alt="" />
                     </p>
                 </li>
             </ul>
@@ -54,7 +58,6 @@
 </template>
 
 <script>
-// import '@/assets/css/footer.css'
 export default {
   name: 'Footer',
   props: {
@@ -63,7 +66,5 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped src="@/assets/css/footer.scss" lang="scss">
-
 </style>
