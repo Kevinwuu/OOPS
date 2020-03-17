@@ -5,7 +5,7 @@
     "private": true,
     "scripts": {
         "predeploy": "npm run build",
-        "deploy": "git subtree push --prefix dist origin gh-pages",
+        "deploy": "gh-pages -d dist",
         "serve": "vue-cli-service serve",
         "build": "vue-cli-service build",
         "lint": "vue-cli-service lint"
