@@ -11,12 +11,17 @@ footer {
     justify-content: center;
     align-items: center;
     div {
-        margin: 0 50px;
+        margin: 0px 20px;
     }
+}
+
+.social_media {
+    margin-top: 100px;
 }
 
 .nav_link {
     border-left: 2px solid #ffd500;
+    margin-top: 100px;
     ul {
         padding-left: 10px;
         li {
@@ -27,6 +32,7 @@ footer {
 
 .contact {
     border-left: 2px solid #ffd500;
+    margin-top: 100px;
     ul {
         padding-left: 10px;
         display: flex;
@@ -40,16 +46,11 @@ footer {
 }
 
 .logo {
-    img {
-        height: 180px;
-        width: 250px;
-        &:hover {
-            cursor: pointer;
-        }
-    }
+    margin-top: 100px;
 }
 
 .social_icon {
+    margin-top: 15px;
     img {
         height: 50px;
         width: 50px;

@@ -23,3 +23,13 @@ li {
 a {
     text-decoration: none;
 }
+
+.logo {
+    img {
+        height: 184px;
+        width: 210px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

@@ -49,7 +49,7 @@
                 </li>
             </ul>
         </div>
-        <div id="logo">
+        <div class="logo">
             <router-link to="/">
                 <img src="../assets/img/logo.png" alt="" />
             </router-link>

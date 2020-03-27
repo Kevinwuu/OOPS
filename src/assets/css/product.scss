@@ -1,25 +1,32 @@
 .product {
-    padding: 50px;
+    padding: 20px 50px;
 }
 
 .tissue {
-    background-image: url("../img/product/tissue.png");
-    background-size: cover;
+    background-image: url("../img/product/tissue_body.png");
+    background-size: contain;
     background-repeat: no-repeat;
     height: 2000px;
-    width: 1000px;
+    width: 730px;
     margin: 0 auto;
     flex-direction: column;
     display: flex;
     justify-content: center;
-    padding-top: 300px;
-    div {
-        margin: 50px;
-        text-align: center;
+    .tissue_head {
+        height: 500px;
+        width: 730px;
+        margin: 0 auto;
+    }
+    .product_field {
+        margin: 20px;
+        padding: 0 100px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         img {
             height: 200px;
             width: 200px;
-            margin: 0 10px;
+            margin: 75px 10px;
         }
     }
 }
