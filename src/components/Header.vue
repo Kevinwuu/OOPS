@@ -9,17 +9,17 @@
             <ul>
                 <li>
                     <router-link to="/about">
-                        <img src="../assets/img/header/menu_aboutus.png" alt="" />
+                        <img :src="imgSrc[0]" alt="" />
                     </router-link>
                 </li>
                 <li>
                     <router-link to="/guideline">
-                        <img src="../assets/img/header/menu_guideline.png" alt="" />
+                        <img :src="imgSrc[1]" alt="" />
                     </router-link>
                 </li>
                 <li>
                     <router-link to="/product">
-                        <img src="../assets/img/header/menu_product.png" alt="" />
+                        <img :src="imgSrc[2]" alt="" />
                     </router-link>
                 </li>
             </ul>
@@ -28,8 +28,17 @@
 </template>
 
 <script>
+import AboutUs from '@/assets/img/header/menu_aboutus.png'
+import Guideline from '@/assets/img/header/menu_guideline.png'
+import Product from '@/assets/img/header/menu_product.png'
+
 export default {
-  name: 'Header'
+  name: 'Header',
+  data () {
+    return {
+      imgSrc: [AboutUs, Guideline, Product]
+    }
+  }
 }
 </script>
 

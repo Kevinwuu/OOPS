@@ -5,12 +5,12 @@
 }
 
 .oops {
-    // position: absolute;
-    // top: 620px;
-    // z-index: 1;
     text-align: center;
-    height: 600px;
     margin: 10px auto;
+    img {
+        height: 800px;
+        width: 1000px;
+    }
 }
 
 .aboutus {
