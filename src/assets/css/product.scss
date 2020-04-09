@@ -3,7 +3,7 @@
 }
 
 .tissue {
-    background-image: url("../img/product/tissue_body.png");
+    background-image: url('../img/product/tissue_body.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 2000px;
@@ -19,14 +19,30 @@
     }
     .product_field {
         margin: 20px;
-        padding: 0 100px;
+        padding: 0 120px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        img {
-            height: 200px;
-            width: 200px;
-            margin: 75px 10px;
+        .product_item {
+            margin: 50px 10px;
+            text-align: center;
+            img {
+                display: block;
+                height: 200px;
+                width: 200px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+            p {
+                font-family: 微軟正黑體;
+                color: #174996;
+                line-height: 25px;
+                margin: 0;
+            }
+            button {
+                margin: 10px auto;
+            }
         }
     }
 }
