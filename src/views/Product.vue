@@ -41,10 +41,13 @@
     </v-dialog>
   </v-app>
 </template>
+
 <script>
 import Tumbler from '@/assets/img/product/300ml.jpg'
 import Squeeze from '@/assets/img/product/600ml.jpg'
 import Pour from '@/assets/img/product/1000ml.jpg'
+import Supply from '@/assets/img/product/supply.jpg'
+import Box from '@/assets/img/product/box.jpg'
 
 export default {
   name: 'Product',
@@ -119,7 +122,7 @@ export default {
             補給小站</br>
             Supply Station
           `,
-          src: Tumbler,
+          src: Supply,
           desc: `
             全天然清潔劑補充
             原料：鶴岡文旦萃取液 純水 椰子油皂化物 椰子粉 月桂基葡萄糖苷 礦物鹽晶
@@ -138,7 +141,7 @@ export default {
             柚柚三兄弟</br>
             Hey!Bro
           `,
-          src: Tumbler,
+          src: Box,
           desc: `
             全天然清潔劑補充
             原料：鶴岡文旦萃取液 純水 椰子油皂化物 椰子粉 月桂基葡萄糖苷 礦物鹽晶
