@@ -1,6 +1,6 @@
 footer {
     height: 370px;
-    background-image: url("../img/footer/bg_down.png");
+    background-image: url('../img/footer/bg_down.png');
     background-repeat: no-repeat;
     background-size: 100% 372px;
     // padding-top: 60px;
@@ -26,6 +26,12 @@ footer {
         padding-left: 10px;
         li {
             margin-bottom: 10px;
+            img {
+                opacity: 1;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
         }
     }
 }
