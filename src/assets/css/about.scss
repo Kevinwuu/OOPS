@@ -2,3 +2,57 @@
     padding: 50px;
     height: 500px;
 }
+
+.water {
+    background-image: url('../img/aboutus/water_flow.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1957px;
+    width: 825px;
+    margin: 560px auto 100px auto;
+    flex-direction: column;
+    display: flex;
+}
+
+.water_tube {
+    height: 600px;
+    width: 500px;
+    position: absolute;
+    top: 430px;
+    left: 400px;
+}
+
+.water_bubble {
+    height: 600px;
+    width: 1200px;
+    position: absolute;
+    top: 550px;
+    left: 100px;
+}
+
+.content {
+    font-size: 16px;
+    font-family: 王漢宗特圓體;
+    text-align: center;
+    padding-top: 330px;
+    p {
+        margin-top: 100px;
+    }
+}
+
+.about_icon {
+    margin: 0px auto;
+    img {
+        width: 100px;
+        height: 100px;
+        margin: 100px 10px 10px 10px;
+    }
+}
+
+.about_noicon {
+    img {
+        width: 100px;
+        height: 100px;
+        margin: 100px 10px 10px 10px;
+    }
+}
