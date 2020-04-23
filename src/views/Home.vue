@@ -1,21 +1,19 @@
 <template>
   <div class="home">
-          <!-- <img id="bubble" src="../assets/img/home/bubble.png" alt="" /> -->
       <div class="oops">
         <img src="../assets/img/home/oops.png" alt="">
       </div>
       <div class="aboutus" data-aos="fade-right">
           <img src="../assets/img/home/text_aboutus.png" alt="" />
-          <img id="about" src="../assets/img/home/img_about.jpg" data-aos="fade-left" data-aos-anchor=".product" alt="">
+          <img id="about" src="../assets/img/home/img_about.jpg" data-aos="fade-left" alt="">
       </div>
       <div class="product" data-aos="fade-up">
           <img data-aos="fade-up" src="../assets/img/home/text_product.png" alt="" />
-          <!-- <img id="product" src="../assets/img/home/img_product_desc.jpg" data-aos="fade-left" data-aos-anchor=".product" alt=""> -->
+          <img id="product" src="../assets/img/home/img_product_desc.jpg" data-aos="fade-left" alt="">
       </div>
       <div class="guideline">
           <img src="../assets/img/home/text_guideline.png" alt="" />
       </div>
-      <!-- <div class="followus"></div> -->
   </div>
 </template>
 

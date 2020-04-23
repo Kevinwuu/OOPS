@@ -1,21 +1,24 @@
 #about {
     position: absolute;
-    right: 150px;
+    right: 0;
     top: -23px;
-    z-index: 1;
+    z-index: -2;
 }
 
 #product {
+    height: 480px;
+    width: 100vw;
     position: absolute;
-    right: 150px;
-    top: -23px;
+    right: 0;
+    left: 0;
+    top: 320px;
     z-index: 1;
 }
 
 .home {
     margin-top: 180px;
     margin-bottom: 600px;
-    padding: 50px;
+    padding: 50px 0;
 }
 
 .oops {
@@ -39,6 +42,7 @@
     margin: 10px 0px;
     text-align: center;
     height: 1000px;
+    width: 100vw;
     img {
         height: 287px;
         width: 975px;
