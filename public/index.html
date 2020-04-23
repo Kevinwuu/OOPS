@@ -11,7 +11,7 @@
         OOPS
     </title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />
 </head>
 
 <body>
@@ -25,9 +25,17 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </body>
 <script>
     AOS.init()
+    var wow = new WOW({
+        boxClass: 'wow', // 要套用WOW.js縮需要的動畫class(預設是wow)
+        offset: 0, // 距離顯示多遠開始顯示動畫 (預設是0, 因此捲動到顯示時才出現動畫)
+        mobile: true, // 手機上是否要套用動畫 (預設是true)
+        live: true, // 非同步產生的內容是否也要套用 (預設是true, 非常適合搭配SPA)
+    })
+    wow.init()
 </script>
 
 </html>

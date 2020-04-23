@@ -1,17 +1,17 @@
 <template>
 <div class="about">
+  <img class="water_tube" src="../assets/img/aboutus/water_tube.png" alt="">
+  <img class="water_bubble" src="../assets/img/aboutus/water_bubble.png" alt="">
   <div class="water">
-        <img class="water_tube" src="../assets/img/aboutus/water_tube.png" alt="">
-        <img class="water_bubble" src="../assets/img/aboutus/water_bubble.png" alt="">
     <div class="content">
       <h1 v-html="title"></h1>
       <h2 v-html="slogan"></h2>
       <p v-html="desc"></p>
       <div class="about_icon">
-        <img  v-for="icon in icons" :key="icon.id" :src="icon" alt="">
+        <img  class="wow animated fadeInDown"  data-wow-delay="2" v-for="icon in icons" :key="icon.id" :src="icon" alt="">
       </div>
       <div class="about_noicon">
-        <img  v-for="no_icon in no_icons" :key="no_icon.id" :src="no_icon" alt="">
+        <img  class="wow animated fadeInDown"  data-wow-delay="4" v-for="no_icon in no_icons" :key="no_icon.id" :src="no_icon" alt="">
       </div>
     </div>
   </div>

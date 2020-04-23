@@ -68,7 +68,7 @@ export default {
     //   menu: [Index, AboutUs, Guideline, Product],
       menu: [
           {path:'/', src:Index},
-          {path:'/aboutus',src:AboutUs},
+          {path:'/about',src:AboutUs},
           {path:'/guideline',src:Guideline},
           {path:'/product',src:Product}
     ],
