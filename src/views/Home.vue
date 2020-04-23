@@ -8,11 +8,12 @@
           <img id="about" src="../assets/img/home/img_about.jpg" data-aos="fade-left" alt="">
       </div>
       <div class="product" data-aos="fade-up">
-          <img data-aos="fade-up" src="../assets/img/home/text_product.png" alt="" />
-          <img id="product" src="../assets/img/home/img_product_desc.jpg" data-aos="fade-left" alt="">
+          <img src="../assets/img/home/text_product.png" alt="" />
+          <img id="product" src="../assets/img/home/img_product_desc.jpg" data-aos="fade-right" alt="">
       </div>
       <div class="guideline">
           <img src="../assets/img/home/text_guideline.png" alt="" />
+          <img id="guideline" src="../assets/img/home/img_guideline.jpg" alt="" data-aos="fade-left"/>
       </div>
   </div>
 </template>

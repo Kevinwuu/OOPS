@@ -6,7 +6,7 @@
 }
 
 #product {
-    height: 480px;
+    height: 520px;
     width: 100vw;
     position: absolute;
     right: 0;
@@ -15,9 +15,16 @@
     z-index: 1;
 }
 
+#guideline {
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    width: 450px;
+    left: 450px;
+}
+
 .home {
-    margin-top: 180px;
-    margin-bottom: 600px;
+    margin-bottom: 200px;
     padding: 50px 0;
 }
 
@@ -56,6 +63,6 @@
     margin: 10px 200px;
     text-align: center;
     img {
-        height: 800px;
+        height: 700px;
     }
 }
