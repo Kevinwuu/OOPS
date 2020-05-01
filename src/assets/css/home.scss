@@ -1,18 +1,15 @@
 #about {
     position: absolute;
-    right: 0;
-    top: -23px;
+    width: 850px;
+    height: 470px;
+    right: calc((100% - 850px) / 2 - 60px);
+    top: 0;
     z-index: -2;
 }
 
 #product {
-    height: 520px;
-    width: 100vw;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 320px;
-    z-index: 1;
+    height: 828px;
+    width: 100%;
 }
 
 #guideline {
@@ -20,49 +17,68 @@
     z-index: 1;
     height: 450px;
     width: 450px;
-    left: 450px;
+    top: 25px;
+    left: calc((100% - 450px) / 2 + 40px);
 }
 
 .home {
-    margin-bottom: 200px;
+    margin-bottom: 150px;
     padding: 50px 0;
 }
 
 .oops {
     text-align: center;
-    margin: 10px auto;
+    margin: 5px auto;
     img {
-        height: 800px;
-        width: 1000px;
+        height: 500px;
+        width: 680px;
     }
 }
 
 .aboutus {
-    margin: 50px 200px 165px 200px;
+    margin: 50px auto 165px auto;
     text-align: center;
+    position: relative;
     img {
-        height: 400px;
+        height: 500px;
+        width: 800px;
     }
 }
 
 .product {
     margin: 10px 0px;
     text-align: center;
-    height: 1000px;
+    height: 1200px;
     width: 100vw;
-    img {
-        height: 287px;
-        width: 975px;
-        &.product_desc {
-            width: 100vw;
-        }
+    .product_desc {
+        height: 200px;
+        width: 1050px;
+        margin-bottom: 100px;
     }
 }
 
 .guideline {
-    margin: 10px 200px;
+    margin: 10px auto;
     text-align: center;
-    img {
+    position: relative;
+    .guideline_desc {
         height: 700px;
+        width: 700px;
+    }
+}
+
+.follow_us {
+    height: 710px;
+    background: url('../img/home/ig_bg.png');
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 90px;
+    padding: 20px 100px;
+    img {
+        cursor: pointer;
+        height: 300px;
+        width: 300px;
+        margin: 18px 20px;
     }
 }

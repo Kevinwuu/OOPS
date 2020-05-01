@@ -11,10 +11,11 @@
     width: 690px;
     height: 560px;
     text-align: center;
-    background: url("../img/guideline/mirror.png");
+    background: url('../img/guideline/mirror.png');
     background-repeat: no-repeat;
 }
 
-.img {
-    text-align: center;
+.image-field img {
+    display: block;
+    margin: 0 auto;
 }

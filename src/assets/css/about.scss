@@ -14,45 +14,51 @@
     display: flex;
 }
 
-.water_tube {
+#water_tube {
     height: 600px;
     width: 500px;
     position: absolute;
     top: 370px;
-    left: 334px;
+    right: calc((100% - 500px) / 2 + 45px);
 }
 
-.water_bubble {
-    height: 600px;
-    width: 1140px;
+#water_bubble {
+    height: 580px;
+    width: 1170px;
     position: absolute;
     top: 550px;
-    left: 60px;
+    right: calc((100% - 1170px) / 2 - 8px);
 }
 
 .content {
     font-size: 16px;
-    font-family: 王漢宗特圓體;
-    text-align: center;
     padding-top: 330px;
-    p {
-        margin-top: 100px;
+    .content_desc {
+        h1 {
+            text-align: center;
+        }
+        h2 {
+            margin: 60px auto;
+            text-align: start;
+            padding-left: 280px;
+            line-height: 45px;
+        }
+        p {
+            line-height: 30px;
+            letter-spacing: 4px;
+            padding-left: 218px;
+            margin-bottom: 30px;
+        }
     }
 }
 
-.about_icon {
-    margin: 0px auto;
-    img {
-        width: 80px;
-        height: 80px;
-        margin: 100px 10px 10px 10px;
-    }
-}
-
+.about_icon,
 .about_noicon {
+    margin: 0px auto;
+    text-align: center;
     img {
         width: 80px;
         height: 80px;
-        margin: 100px 10px 10px 10px;
+        margin: 25px 10px 10px 10px;
     }
 }

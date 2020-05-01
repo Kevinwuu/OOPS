@@ -85,7 +85,7 @@ export default {
           path: Facebook
         },
         {
-          link: 'https://www.instagram.com/_oops2019/?hl=zh-tw',
+          link: 'https://www.instagram.com/oops20192020/',
           path: Instagram
         }
       ],
