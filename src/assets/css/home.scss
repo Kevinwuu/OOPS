@@ -30,7 +30,6 @@
 }
 
 .home {
-    margin-bottom: 150px;
     padding: 380px 0 150px 0;
 }
 
@@ -76,17 +75,24 @@
 }
 
 .follow_us {
-    height: 710px;
-    background: url('../img/home/ig_bg.png');
+    text-align: center;
+    height: 800px;
+    padding: 50px 0;
+    background: url('../img/home/ig_bg.jpg');
+}
+
+.ig_image_area {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 90px;
-    padding: 20px 100px;
+    justify-content: space-between;
+    align-content: center;
+    // margin-top: 90px;
+    padding: 0px 65px 10px 65px;
     img {
+        // display: none;
         cursor: pointer;
         height: 300px;
         width: 300px;
-        margin: 18px 20px;
+        margin: 18px 0px;
     }
 }
