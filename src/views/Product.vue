@@ -12,7 +12,7 @@
               <div class="product_item" v-for="item in product" :key="item.id">
                 <img :src="item.src" :alt="item.title" />
                 <p v-html="item.title"></p>
-                <v-btn v-on="on">詳細資訊</v-btn>
+                <v-btn v-on="on" @click="handleDetailClick(item)">詳細資訊</v-btn>
               </div>
             </div>
           </div>
@@ -20,20 +20,24 @@
       </template>
 
       <v-card>
-        <v-card-title class="headline grey lighten-2" primary-title>
-          Product Header
+        <v-card-title class="headline grey lighten-2" primary-title v-html="selectedItem.title">
         </v-card-title>
-
-        <v-card-text>
-          content
+        <div class="v-card__content">
+          <img :src="selectedItem.src" alt="">
+        </div>
+        <v-card-text v-html="selectedItem.desc">
         </v-card-text>
 
-        <v-divider></v-divider>
+        <!-- <v-divider></v-divider> -->
 
         <v-card-actions>
+          <v-btn @click="dialog = false">
+            <v-icon dark left>mdi-arrow-left</v-icon>
+            Back
+          </v-btn>
           <v-spacer></v-spacer>
-          <v-btn color="primary" text @click="dialog = false">
-            I accept
+          <v-btn color="red" dark @click="handleGoToStoreClick">
+            蝦皮賣場
           </v-btn>
         </v-card-actions>
       </v-card>
@@ -52,6 +56,11 @@ export default {
   data() {
     return {
       dialog: false,
+      selectedItem:{
+        title:'',
+        src: '',
+        desc: ''
+      },
       product: [
         {
           title: `
@@ -60,18 +69,18 @@ export default {
           `,
           src: Tumbler,
           desc: `
-            全天然清潔劑
-            原料：鶴岡文旦萃取液 純水 椰子油皂化物 椰子粉 月桂基葡萄糖苷 礦物鹽晶
-            檸檬酸 蘆薈萃取液
-            用途：衛浴 廚房 地板清潔
-            使用方式：躺著擠趴著擠不如倒著擠
-            功效：速速帶走污漬不傷身，還能替你減少殘留的毒素，有效清潔在這裡
-            有效日期：未開封2年，開封1年
+            全天然清潔劑</br>
+            原料：鶴岡文旦萃取液 純水 椰子油皂化物 椰子粉 月桂基葡萄糖苷 礦物鹽晶</br>
+            檸檬酸 蘆薈萃取液</br>
+            用途：衛浴 廚房 地板清潔</br>
+            使用方式：躺著擠趴著擠不如倒著擠</br>
+            功效：速速帶走污漬不傷身，還能替你減少殘留的毒素，有效清潔在這裡</br>
+            有效日期：未開封2年，開封1年</br></br>
 
-            Made in TAiwan
+            Made in TAiwan</br></br>
 
-            請給予安全舒適的環境，以避免產品發酵變質，越清越不乾淨
-            本產品強烈建議頻繁使用，不要問為什麼，因為他是天然的
+            請給予安全舒適的環境，以避免產品發酵變質，越清越不乾淨</br>
+            本產品強烈建議頻繁使用，不要問為什麼，因為他是天然的</br>
             有沈澱的狀況是常態，不怕不健康，只怕你不用他`
         },
         {
@@ -154,6 +163,18 @@ export default {
             有沈澱的狀況是常態，不怕不健康，只怕你不用他`
         }
       ]
+    }
+  },
+  methods: {
+    handleDetailClick(data) {
+      console.log(data)
+      let product_name = data.title.split('</br>')[0]
+      this.selectedItem.title = product_name
+      this.selectedItem.src = data.src
+      this.selectedItem.desc = data.desc
+    },
+    handleGoToStoreClick() {
+      window.open("https://shopee.tw/peggy0223?smtt=0.0.9", "_blank")
     }
   }
 }

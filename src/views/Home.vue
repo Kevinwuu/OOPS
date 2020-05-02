@@ -19,9 +19,7 @@
       <div class="follow_us">
         <img class="follow_us_text wow animated fadeInUp" src="../assets/img/home/followus.jpg" alt="">
         <div class="ig_image_area">
-          <a v-for="path in IG.source" :key="path.id" :href="IG.link" target="_blank">
-            <img :src="path" alt="">
-          </a>
+            <img v-for="path in IG.source" :key="path.id" :src="path" @click="handleIgClick" alt="">
         </div>
       </div>
   </div>
@@ -43,8 +41,11 @@ export default {
         source: [IG_01, IG_02, IG_03, IG_04, IG_05, IG_06],
         link: 'https://www.instagram.com/oops20192020/'
       }
-      // IG_img: [IG_01, IG_02, IG_03, IG_04, IG_05, IG_06],
-      // IG_link: 'https://www.instagram.com/oops20192020/'
+    }
+  },
+  methods: {
+    handleIgClick() {
+      window.open(this.IG.link, "_blank")
     }
   }
 }

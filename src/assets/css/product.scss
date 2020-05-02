@@ -46,3 +46,20 @@
         }
     }
 }
+
+.v-card {
+    text-align: center;
+    .v-card__content {
+        margin: 30px auto;
+        img {
+            height: 300px;
+            width: 300px;
+        }
+    }
+    .v-card__text {
+        text-align: left;
+    }
+    .v-card__actions {
+        padding-bottom: 20px;
+    }
+}
