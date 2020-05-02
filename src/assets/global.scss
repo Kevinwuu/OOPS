@@ -14,11 +14,14 @@ p {
 }
 
 body {
+    position: relative;
+    margin: 0;
+}
+
+#app {
     background-image: url('@/../img/bk.png');
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
-    margin: 0;
 }
 
 ul,

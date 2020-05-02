@@ -1,5 +1,4 @@
 <template>
-  <v-app>
     <v-dialog v-model="dialog" width="500">
       <template v-slot:activator="{ on }">
         <div class="product">
@@ -39,7 +38,6 @@
         </v-card-actions>
       </v-card>
     </v-dialog>
-  </v-app>
 </template>
 
 <script>
