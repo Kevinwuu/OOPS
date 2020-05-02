@@ -17,7 +17,9 @@
           <img id="guideline" src="../assets/img/home/img_guideline.jpg" alt="" class="wow animated fadeInRight"/>
       </div>
       <div class="follow_us">
-        <img v-for="path in IG.source" :key="path.id" :src="path" :href="IG.link" alt="">
+        <a v-for="path in IG.source" :key="path.id" :href="IG.link" target="_blank">
+          <img :src="path" alt="">
+        </a>
       </div>
   </div>
 </template>
