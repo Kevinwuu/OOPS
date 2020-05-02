@@ -68,6 +68,7 @@ export default {
             Tumbler
           `,
           src: Tumbler,
+          link: 'https://shopee.tw/%E5%80%92%E4%BE%86%E5%80%92%E5%8E%BB-300ml%E6%B8%85%E6%BD%94%E5%8A%91-i.471092.6430163656',
           desc: `
             全天然清潔劑</br>
             原料：鶴岡文旦萃取液 純水 椰子油皂化物 椰子粉 月桂基葡萄糖苷 礦物鹽晶</br>
@@ -89,6 +90,7 @@ export default {
             Squeeze Me
           `,
           src: Squeeze,
+          link: 'https://shopee.tw/%E6%93%A0%E6%88%91%E6%93%A0%E6%88%91-600ml%E6%B8%85%E6%BD%94%E5%8A%91-i.471092.3730261619',
           desc: `
             全天然清潔劑</br>
             原料：鶴岡文旦萃取液 純水 椰子油皂化物 椰子粉 月桂基葡萄糖苷 礦物鹽晶</br>
@@ -110,6 +112,7 @@ export default {
             Pour?
           `,
           src: Pour,
+          link: 'https://shopee.tw/%E4%BD%A0%E5%80%92%E4%BA%86%E5%97%8E-1000ml%E6%B8%85%E6%BD%94%E5%8A%91-i.471092.6130166134',
           desc: `
             全天然清潔劑</br>
             原料：鶴岡文旦萃取液 純水 椰子油皂化物 椰子粉 月桂基葡萄糖苷 礦物鹽晶</br>
@@ -130,6 +133,7 @@ export default {
             Supply Station
           `,
           src: Supply,
+          link: 'https://shopee.tw/%E8%A3%9C%E7%B5%A6%E5%B0%8F%E7%AB%99-1000ml%E8%A3%9C%E5%85%85%E5%8C%85-i.471092.4130168384',
           desc: `
             全天然清潔劑補充</br>
             原料：鶴岡文旦萃取液 純水 椰子油皂化物 椰子粉 月桂基葡萄糖苷 礦物鹽晶</br>
@@ -149,6 +153,7 @@ export default {
             Hey!Bro
           `,
           src: Box,
+          link: 'https://shopee.tw/%E6%9F%9A%E6%9F%9A%E4%B8%89%E5%85%84%E5%BC%9F-%E7%A6%AE%E7%9B%92%E6%B8%85%E6%BD%94%E5%8A%91-i.471092.3830263754',
           desc: `
             全天然清潔劑補充</br>
             原料：鶴岡文旦萃取液 純水 椰子油皂化物 椰子粉 月桂基葡萄糖苷 礦物鹽晶</br>
@@ -172,9 +177,10 @@ export default {
       this.selectedItem.title = product_name
       this.selectedItem.src = data.src
       this.selectedItem.desc = data.desc
+      this.selectedItem.link = data.link
     },
     handleGoToStoreClick() {
-      window.open("https://shopee.tw/peggy0223?smtt=0.0.9", "_blank")
+      window.open(this.selectedItem.link, "_blank")
     }
   }
 }
