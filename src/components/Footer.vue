@@ -28,9 +28,7 @@
       <ul>
         <li v-for="item in contact" :key="item.id">
           <img :src="item.title" alt="" />
-          <p>
-            <img :src="item.info" alt="" />
-          </p>
+          <img :src="item.info" alt="" />
         </li>
       </ul>
     </div>
@@ -64,8 +62,6 @@ export default {
   name: 'Footer',
   data() {
     return {
-      message: 'xdd',
-    //   menu: [Index, AboutUs, Guideline, Product],
       menu: [
           {path:'/', src:Index},
           {path:'/about',src:AboutUs},

@@ -47,6 +47,10 @@ footer {
         justify-content: space-between;
         li {
             margin-bottom: 10px;
+            img {
+                display: block;
+                margin-bottom: 6px;
+            }
         }
     }
 }
