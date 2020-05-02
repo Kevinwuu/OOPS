@@ -10,7 +10,7 @@
             />
             <div class="product_field">
               <div class="product_item" v-for="item in product" :key="item.id">
-                <img :src="item.src" :alt="item.title" />
+                <img :src="item.src[0]" :alt="item.title" />
                 <p v-html="item.title"></p>
                 <v-btn v-on="on" @click="handleDetailClick(item)">詳細資訊</v-btn>
               </div>
@@ -22,15 +22,16 @@
       <v-card>
         <v-card-title class="headline grey lighten-2" primary-title v-html="selectedItem.title">
         </v-card-title>
+
         <div class="v-card__content">
-          <img :src="selectedItem.src" alt="">
+          <Carousel :path="selectedItem.src" />
         </div>
+
         <v-card-text v-html="selectedItem.desc">
         </v-card-text>
 
-        <!-- <v-divider></v-divider> -->
-
         <v-card-actions>
+          <v-spacer></v-spacer>
           <v-btn @click="dialog = false">
             <v-icon dark left>mdi-arrow-left</v-icon>
             Back
@@ -39,6 +40,7 @@
           <v-btn color="red" dark @click="handleGoToStoreClick">
             蝦皮賣場
           </v-btn>
+          <v-spacer></v-spacer>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -46,10 +48,17 @@
 
 <script>
 import Tumbler from '@/assets/img/product/300ml.jpg'
+import Tumbler01 from '@/assets/img/product/300ml_01.jpg'
 import Squeeze from '@/assets/img/product/600ml.jpg'
+import Squeeze01 from '@/assets/img/product/600ml_01.jpg'
 import Pour from '@/assets/img/product/1000ml.jpg'
+import Pour01 from '@/assets/img/product/1000ml_01.jpg'
 import Supply from '@/assets/img/product/supply.jpg'
+import Supply01 from '@/assets/img/product/supply_01.jpg'
 import Box from '@/assets/img/product/box.jpg'
+import Box01 from '@/assets/img/product/box_01.jpg'
+
+import Carousel from '@/components/Carousel.vue'
 
 export default {
   name: 'Product',
@@ -67,7 +76,7 @@ export default {
             倒來倒去（300ml)</br>
             Tumbler
           `,
-          src: Tumbler,
+          src: [Tumbler, Tumbler01],
           link: 'https://shopee.tw/%E5%80%92%E4%BE%86%E5%80%92%E5%8E%BB-300ml%E6%B8%85%E6%BD%94%E5%8A%91-i.471092.6430163656',
           desc: `
             全天然清潔劑</br>
@@ -89,7 +98,7 @@ export default {
             擠我擠我（600ml)</br>
             Squeeze Me
           `,
-          src: Squeeze,
+          src: [Squeeze, Squeeze01],
           link: 'https://shopee.tw/%E6%93%A0%E6%88%91%E6%93%A0%E6%88%91-600ml%E6%B8%85%E6%BD%94%E5%8A%91-i.471092.3730261619',
           desc: `
             全天然清潔劑</br>
@@ -111,7 +120,7 @@ export default {
             你倒了嗎（1000ml)</br>
             Pour?
           `,
-          src: Pour,
+          src: [Pour, Pour01],
           link: 'https://shopee.tw/%E4%BD%A0%E5%80%92%E4%BA%86%E5%97%8E-1000ml%E6%B8%85%E6%BD%94%E5%8A%91-i.471092.6130166134',
           desc: `
             全天然清潔劑</br>
@@ -132,7 +141,7 @@ export default {
             補給小站</br>
             Supply Station
           `,
-          src: Supply,
+          src: [Supply, Supply01],
           link: 'https://shopee.tw/%E8%A3%9C%E7%B5%A6%E5%B0%8F%E7%AB%99-1000ml%E8%A3%9C%E5%85%85%E5%8C%85-i.471092.4130168384',
           desc: `
             全天然清潔劑補充</br>
@@ -152,7 +161,7 @@ export default {
             柚柚三兄弟</br>
             Hey!Bro
           `,
-          src: Box,
+          src: [Box, Box01],
           link: 'https://shopee.tw/%E6%9F%9A%E6%9F%9A%E4%B8%89%E5%85%84%E5%BC%9F-%E7%A6%AE%E7%9B%92%E6%B8%85%E6%BD%94%E5%8A%91-i.471092.3830263754',
           desc: `
             全天然清潔劑補充</br>
@@ -172,7 +181,6 @@ export default {
   },
   methods: {
     handleDetailClick(data) {
-      console.log(data)
       let product_name = data.title.split('</br>')[0]
       this.selectedItem.title = product_name
       this.selectedItem.src = data.src
@@ -182,6 +190,9 @@ export default {
     handleGoToStoreClick() {
       window.open(this.selectedItem.link, "_blank")
     }
+  },
+  components: {
+    Carousel
   }
 }
 </script>
