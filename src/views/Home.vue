@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+      <img id="bubble" class="wow animated slideInDown" src="../assets/img/home/bubble.png" alt="">
       <div class="oops">
         <img src="../assets/img/home/oops.png" alt="">
       </div>
