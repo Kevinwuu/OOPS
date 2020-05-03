@@ -2,27 +2,33 @@
     padding: 20px 50px;
 }
 
+#tissue_paper {
+    position: absolute;
+    height: 100%;
+    width: 600px;
+    z-index: -1;
+    left: calc((100% - 600px) / 2 - 10px);
+}
+
 .tissue {
-    background-image: url('../img/product/tissue_body.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    height: 2000px;
-    width: 730px;
+    position: relative;
+    height: 2200px;
+    width: 920px;
     margin: 0 auto;
     flex-direction: column;
     display: flex;
     justify-content: center;
     .tissue_head {
-        height: 500px;
-        width: 730px;
+        height: 600px;
+        width: 100%;
         margin: 0 auto;
     }
     .product_field {
         margin: 20px;
-        padding: 0 120px;
+        padding: 0 210px;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: left;
         .product_item {
             margin: 50px 10px;
             text-align: center;
