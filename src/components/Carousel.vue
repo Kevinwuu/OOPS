@@ -14,15 +14,12 @@
 </template>
 
 <script>
-// import Tumbler from '@/assets/img/product/300ml.jpg'
-
-  export default {
+export default {
     props: ['path'],
     data () {
-      return {
-        slides:this.path,
-        // slides: [Tumbler, Tumbler, Tumbler],
-      }
+        return {
+            slides:this.path,
+        }
     },
-  }
+}
 </script>
