@@ -3,6 +3,12 @@
     src: url('./font/wt009.ttf');
 }
 
+html,
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
 h1,
 h2,
 p {
