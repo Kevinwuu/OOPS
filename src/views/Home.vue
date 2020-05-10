@@ -1,24 +1,24 @@
 <template>
   <div class="home">
       <img id="bubble" class="wow animated fadeInDown" src="../assets/img/home/bubble.png" alt="">
-      <div class="oops">
-        <img src="../assets/img/home/oops.png" alt="">
+      <div class="oops_area">
+        <img class="oops_logo" src="../assets/img/home/oops.png" alt="">
       </div>
-      <div class="aboutus">
-          <img class="wow animated fadeInLeft" src="../assets/img/home/text_aboutus.png" alt="" />
+      <div class="aboutus_area">
+          <img class="aboutus_text wow animated fadeInLeft" src="../assets/img/home/text_aboutus.png" alt="" />
           <img id="about" src="../assets/img/home/img_about.jpg" class="wow animated fadeIn" alt="">
       </div>
-      <div class="product">
-          <img class="product_desc wow animated fadeInUp" src="../assets/img/home/text_product.png" alt="" />
+      <div class="product_area">
+          <img class="product_text wow animated fadeInUp" src="../assets/img/home/text_product.png" alt="" />
           <img id="product" src="../assets/img/home/img_product_desc.jpg" class="wow animated fadeInLeft" alt="">
       </div>
-      <div class="guideline">
-          <img class="guideline_desc" src="../assets/img/home/text_guideline.png" alt="" />
+      <div class="guideline_area">
+          <img class="guideline_text" src="../assets/img/home/text_guideline.png" alt="" />
           <img id="guideline" src="../assets/img/home/img_guideline.jpg" alt="" class="wow animated fadeInRight"/>
       </div>
-      <div class="follow_us">
+      <div class="follow_us_area">
         <img class="follow_us_text wow animated fadeInUp" src="../assets/img/home/followus.png" alt="">
-        <div class="ig_image_area">
+        <div class="ig_area">
             <img v-for="path in IG.source" :key="path.id" :src="path" @click="handleIgClick" alt="">
         </div>
       </div>

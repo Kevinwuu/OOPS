@@ -23,3 +23,9 @@ export default {
     },
 }
 </script>
+<style lang="scss" scoped>
+.v-image__image {
+  // height: 700px;
+  // width: 700px;
+}
+</style>
