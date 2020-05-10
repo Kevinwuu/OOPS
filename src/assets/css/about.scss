@@ -1,64 +1,69 @@
-.aboutus {
-    padding: 50px;
-    height: 500px;
-}
-
-.water {
-    background-image: url('../img/aboutus/water_flow.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 1957px;
-    width: 825px;
-    margin: 515px auto 20px auto;
-    flex-direction: column;
-    display: flex;
-}
-
-#water_tube {
-    height: 600px;
-    width: 500px;
-    position: absolute;
-    top: 370px;
-    right: calc((100% - 500px) / 2 + 45px);
-}
-
-#water_bubble {
-    height: 580px;
-    width: 1170px;
-    position: absolute;
-    top: 550px;
-    right: calc((100% - 1170px) / 2 - 8px);
-}
-
-.content {
-    font-size: 16px;
-    padding-top: 330px;
-    .content_desc {
-        h1 {
-            text-align: center;
+@media screen and (max-width: 4096px) {
+    .aboutus {
+        padding: 50px;
+        height: 500px;
+    }
+    .water {
+        background-image: url('../img/aboutus/water_flow.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 1957px;
+        width: 825px;
+        margin: 515px auto 20px auto;
+        flex-direction: column;
+        display: flex;
+    }
+    #water_tube {
+        height: 600px;
+        width: 500px;
+        position: absolute;
+        top: 370px;
+        right: calc((100% - 500px) / 2 + 45px);
+    }
+    #water_bubble {
+        height: 580px;
+        width: 1170px;
+        position: absolute;
+        top: 550px;
+        right: calc((100% - 1170px) / 2 - 8px);
+    }
+    .content {
+        font-size: 16px;
+        padding-top: 330px;
+        .content_desc {
+            h1 {
+                text-align: center;
+            }
+            h2 {
+                margin: 60px auto;
+                text-align: start;
+                padding-left: 280px;
+                line-height: 45px;
+            }
+            p {
+                line-height: 30px;
+                letter-spacing: 4px;
+                padding-left: 218px;
+                margin-bottom: 30px;
+            }
         }
-        h2 {
-            margin: 60px auto;
-            text-align: start;
-            padding-left: 280px;
-            line-height: 45px;
-        }
-        p {
-            line-height: 30px;
-            letter-spacing: 4px;
-            padding-left: 218px;
-            margin-bottom: 30px;
+    }
+    .about_icon,
+    .about_noicon {
+        margin: 0px auto;
+        text-align: center;
+        img {
+            width: 80px;
+            height: 80px;
+            margin: 25px 10px 10px 10px;
         }
     }
 }
 
-.about_icon,
-.about_noicon {
-    margin: 0px auto;
-    text-align: center;
-    img {
-        width: 80px;
-        height: 80px;
-        margin: 25px 10px 10px 10px;
+@media screen and (max-width: 1024px) {
+    #water_bubble {
+        height: 520px;
+        width: 1000px;
+        right: calc((100% - 1000px) / 2 + 20px);
     }
 }

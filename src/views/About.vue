@@ -2,7 +2,7 @@
 <div class="about">
   <div class="water">
     <img id="water_tube" src="../assets/img/aboutus/water_tube.png" alt="">
-  <img id="water_bubble" src="../assets/img/aboutus/water_bubble.png" alt=""  data-aos="fade-down" >
+    <img id="water_bubble" src="../assets/img/aboutus/water_bubble.png" alt=""  data-aos="fade-down" >
     <div class="content">
       <div class="content_desc">
         <h1 v-html="title"></h1>
