@@ -157,5 +157,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" src="@/assets/css/product.scss" scoped></style>

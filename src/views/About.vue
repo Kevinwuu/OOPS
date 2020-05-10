@@ -60,6 +60,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" src="@/assets/css/about.scss" scoped>
-</style>

@@ -94,5 +94,3 @@ export default {
   }
 }
 </script>
-
-<style scoped src="@/assets/css/footer.scss" lang="scss"></style>

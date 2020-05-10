@@ -50,6 +50,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss" src="@/assets/css/home.scss" scoped>
-</style>
