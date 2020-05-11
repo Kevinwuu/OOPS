@@ -4,17 +4,23 @@
       <div class="oops_area">
         <img class="oops_logo" src="../assets/img/home/oops.png" alt="">
       </div>
-      <div class="aboutus_area">
-          <img class="aboutus_text wow animated fadeInLeft" src="../assets/img/home/text_aboutus.png" alt="" />
-          <img id="about" src="../assets/img/home/img_about.jpg" class="wow animated fadeIn" alt="">
-      </div>
+      <router-link to="/about">
+        <div class="aboutus_area">
+            <img class="aboutus_text wow animated fadeInLeft" src="../assets/img/home/text_aboutus.png" alt="" />
+            <img id="about" src="../assets/img/home/img_about.jpg" class="wow animated fadeIn" alt="">
+        </div>
+      </router-link>
       <div class="product_area">
-          <img class="product_text wow animated fadeInUp" src="../assets/img/home/text_product.png" alt="" />
+        <img class="product_text wow animated fadeInUp" src="../assets/img/home/text_product.png" alt="" />
+        <router-link to="/product">
           <img id="product" src="../assets/img/home/img_product_desc.jpg" class="wow animated fadeInLeft" alt="">
+        </router-link>
       </div>
       <div class="guideline_area">
-          <img class="guideline_text" src="../assets/img/home/text_guideline.png" alt="" />
+        <img class="guideline_text" src="../assets/img/home/text_guideline.png" alt="" />
+        <router-link to="/guideline">
           <img id="guideline" src="../assets/img/home/img_guideline.jpg" alt="" class="wow animated fadeInRight"/>
+        </router-link>
       </div>
       <div class="follow_us_area">
         <img class="follow_us_text wow animated fadeInUp" src="../assets/img/home/followus.png" alt="">

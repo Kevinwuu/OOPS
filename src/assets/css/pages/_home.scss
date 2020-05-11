@@ -33,18 +33,6 @@ $follow_us_h: 800px;
         width: 100%;
         top: 0;
     }
-    #product {
-        height: $product_img_h;
-        width: 100%;
-    }
-    #guideline {
-        position: absolute;
-        z-index: 1;
-        height: $guideline_img_h;
-        width: $guideline_img_w;
-        top: 25px;
-        left: calc((100% - 450px) / 2 + 40px);
-    }
     .home {
         padding: 580px 0 150px 0;
     }
@@ -59,6 +47,7 @@ $follow_us_h: 800px;
         margin: 50px auto 165px auto;
         text-align: center;
         position: relative;
+        cursor: pointer;
         .aboutus_text {
             @include size($aboutus_text_h, $aboutus_text_w);
         }
@@ -67,7 +56,6 @@ $follow_us_h: 800px;
         position: absolute;
         @include size($aboutus_img_h, $aboutus_img_w);
         left: calc((100% - 800px) / 2 + 30px);
-        // @include shifting($aboutus_text_w, 30px);
         top: 0;
         z-index: -2;
     }
@@ -82,6 +70,11 @@ $follow_us_h: 800px;
             margin-bottom: 100px;
         }
     }
+    #product {
+        height: $product_img_h;
+        width: 100%;
+        cursor: pointer;
+    }
     .guideline_area {
         margin: 10px auto;
         text-align: center;
@@ -90,6 +83,15 @@ $follow_us_h: 800px;
             height: $guideline_text_h;
             width: $guideline_text_w;
         }
+    }
+    #guideline {
+        position: absolute;
+        z-index: 1;
+        height: $guideline_img_h;
+        width: $guideline_img_w;
+        top: 25px;
+        left: calc((100% - 450px) / 2 + 40px);
+        cursor: pointer;
     }
     .follow_us_area {
         text-align: center;
