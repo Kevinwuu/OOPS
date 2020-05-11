@@ -13,7 +13,7 @@
               <div class="product_item" v-for="item in product" :key="item.id">
                 <img :src="item.src[0]" :alt="item.title" />
                 <p v-html="item.title"></p>
-                <v-btn color="#0839ac" v-on="on" @click="handleDetailClick(item)">詳細資訊</v-btn>
+                <v-btn class="detail_btn" color="#0839ac" v-on="on" @click="handleDetailClick(item)">詳細資訊</v-btn>
               </div>
             </div>
           </div>
