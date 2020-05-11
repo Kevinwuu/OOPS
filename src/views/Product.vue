@@ -8,7 +8,7 @@
               src="../assets/img/product/tissue_head.png"
               alt=""
             />
-            <img id="tissue_paper" class="wow animated slideInDown" data-wow-duration="1.8s" data-wow-delay="0.8s" src="../assets/img/product/tissue_body.png" alt="">
+            <img id="tissue_paper" class="wow animated slideInDown" data-wow-duration="4.2s" data-wow-delay="0.8s" src="../assets/img/product/tissue_body.png" alt="">
             <div class="product_field">
               <div class="product_item" v-for="item in product" :key="item.id">
                 <img :src="item.src[0]" :alt="item.title" />
