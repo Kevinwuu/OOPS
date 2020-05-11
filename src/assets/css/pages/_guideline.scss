@@ -1,20 +1,46 @@
-.guideline {
-    padding: 50px;
+@media screen and (max-width: 4096px) {
+    .guideline {
+        padding: 50px;
+    }
+    .movie_field {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        height: 554px;
+        width: 690px;
+        text-align: center;
+        background: url('../img/guideline/mirror.png') no-repeat;
+        // background-size: 560px 690px;
+        // background-size: contain;
+    }
+    .image-field {
+        .sink_image,
+        .brush_image {
+            display: block;
+            margin: 0 auto;
+        }
+    }
 }
 
-.movie_field {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    width: 690px;
-    height: 560px;
-    text-align: center;
-    background: url('../img/guideline/mirror.png');
-    background-repeat: no-repeat;
-}
-
-.image-field img {
-    display: block;
-    margin: 0 auto;
+@media screen and (max-width: 1024px) {
+    .movie_field {
+        height: calc(560px * 0.8);
+        width: calc(690px * 0.8);
+        background-size: contain;
+        iframe {
+            height: calc(315px * 0.8);
+            width: calc(560px * 0.8);
+        }
+    }
+    .image-field {
+        .brush_image {
+            height: calc(224px * 0.8);
+            width: calc(522px * 0.8);
+        }
+        .sink_image {
+            height: calc(350px * 0.8);
+            width: calc(480px * 0.8);
+        }
+    }
 }

@@ -8,7 +8,7 @@
               src="../assets/img/product/tissue_head.png"
               alt=""
             />
-            <img id="tissue_paper" class="wow animated slideInDown" src="../assets/img/product/tissue_body.png" alt="">
+            <img id="tissue_paper" class="wow animated slideInDown" data-wow-duration="1.8s" data-wow-delay="0.8s" src="../assets/img/product/tissue_body.png" alt="">
             <div class="product_field">
               <div class="product_item" v-for="item in product" :key="item.id">
                 <img :src="item.src[0]" :alt="item.title" />
@@ -33,16 +33,13 @@
         </v-card-text>
 
         <v-card-actions>
-          <v-spacer></v-spacer>
           <v-btn @click="toggleDialog">
-            <v-icon dark left>mdi-arrow-left</v-icon>
             Back
           </v-btn>
           <v-spacer></v-spacer>
           <v-btn color="red" dark @click="handleGoToStoreClick">
             蝦皮賣場
           </v-btn>
-          <v-spacer></v-spacer>
         </v-card-actions>
       </v-card>
     </v-dialog>

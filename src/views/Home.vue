@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-      <img id="bubble" class="wow animated fadeInDown" src="../assets/img/home/bubble.png" alt="">
+      <img id="bubble" class="wow animated fadeInDown" data-wow-duration="1.5s" data-wow-delay="0.8s" src="../assets/img/home/bubble.png" alt="">
       <div class="oops_area">
         <img class="oops_logo" src="../assets/img/home/oops.png" alt="">
       </div>
