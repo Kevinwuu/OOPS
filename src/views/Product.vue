@@ -109,7 +109,7 @@ export default {
           src: [Pour, Pour01],
           link: 'https://shopee.tw/%E4%BD%A0%E5%80%92%E4%BA%86%E5%97%8E-1000ml%E6%B8%85%E6%BD%94%E5%8A%91-i.471092.6130166134',
           desc: '全天然清潔劑</br>',
-          usage: '使用方式：速速帶走污漬不傷身，還能替你減少殘留的毒素，有效清潔在這裡</br>'
+          usage: '使用方式：用力提起瓶子 輕輕傾斜即可</br>'
         },
         {
           title: `
