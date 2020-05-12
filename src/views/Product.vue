@@ -25,7 +25,17 @@
         </v-card-title>
 
         <div class="v-card__content">
-          <Carousel :path="selectedItem.src" />
+          <v-carousel
+            height="400"
+            hide-delimiter-background
+          >
+            <v-carousel-item
+              v-for="(slide, i) in selectedItem.src"
+              :key="i"
+              :src="slide"
+            >
+            </v-carousel-item>
+          </v-carousel>
         </div>
 
         <v-card-text >
@@ -56,8 +66,6 @@ import Supply from '@/assets/img/product/supply.jpg'
 import Supply01 from '@/assets/img/product/supply_01.jpg'
 import Box from '@/assets/img/product/box.jpg'
 import Box01 from '@/assets/img/product/box_01.jpg'
-
-import Carousel from '@/components/Carousel.vue'
 
 export default {
   name: 'Product',
@@ -141,6 +149,8 @@ export default {
       this.selectedItem.src = src
       this.selectedItem.desc = desc + this.content[0] + usage + this.content[1]
       this.selectedItem.link = link
+      console.log('TEST')
+      console.log(this.selectedItem.src )
     },
     handleGoToStoreClick() {
       window.open(this.selectedItem.link, "_blank")
@@ -149,8 +159,5 @@ export default {
       this.dialog = !this.dialog
     }
   },
-  components: {
-    Carousel
-  }
 }
 </script>
