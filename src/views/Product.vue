@@ -1,5 +1,5 @@
 <template>
-    <v-dialog v-model="dialog" width="580">
+    <v-dialog v-model="dialog" width="550">
       <template v-slot:activator="{ on }">
         <div class="product">
           <div class="tissue">
@@ -26,7 +26,7 @@
 
         <div class="v-card__content">
           <v-carousel
-            height="400"
+            height="480"
             hide-delimiter-background
           >
             <v-carousel-item
